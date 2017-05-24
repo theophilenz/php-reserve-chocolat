@@ -2,12 +2,15 @@
     "name": "theophile/reserve-chocolat",
     "autoload": {
         "psr-4": {
-            "App\\": "app"
+            "App\\": "src"
         }
     },
     "authors": [{
         "name": "Theophile Nzungize",
         "email": "theophile.nz@gmail.com"
     }],
-    "require": {}
+    "require": {
+        "silex/silex": "^2.1",
+        "doctrine/dbal": "^2.5"
+    }
 }
