@@ -21,3 +21,8 @@ $app->register(new Silex\Provider\AssetServiceProvider(), array(
 $app['dao.chocolat']= function($app){
     return new App\DAO\ChocolatDAO($app['db']);
 };
+$app['dao.comment']= function($app){
+    $commentDAO= new App\DAO\CommentDAO($app['db']);
+    $commentDAO->setChocolatDAO($app['dao.chocolat']);
+    return $commentDAO;
+};

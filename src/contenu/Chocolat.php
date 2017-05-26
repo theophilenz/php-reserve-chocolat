@@ -2,34 +2,41 @@
 
 namespace App\Contenu;
 
-class Chocolat{
+class Chocolat
+{
     private $id;
     private $titre;
     private $description;
 
-    public function getId(){
+    public function getId()
+    {
         return $this->id;
     }
 
-    public function setId($id){
+    public function setId($id)
+    {
         $this->id= $id;
         return $this;
     }
 
-    public function getTitre(){
+    public function getTitre()
+    {
         return $this->titre;
     }
 
-    public function setTitre($titre){
+    public function setTitre($titre)
+    {
         $this->titre= $titre;
         return $this;
     }
 
-    public function getDescription(){
+    public function getDescription()
+    {
         return $this->description;
     }
 
-    public function setDescription($description){
+    public function setDescription($description)
+    {
         $this->description=$description;
         return $this;
     }
